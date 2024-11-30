@@ -26,9 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} flex antialiased`}
       >
-        {children}
+        <div className="mockup-phone h-[90vh] mt-10">
+          <div className="camera"></div>
+          <div className="display">{children}</div>
+        </div>
       </body>
     </html>
   );
