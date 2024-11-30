@@ -33,20 +33,20 @@ const Header = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/search">Search</Link>
+              <Link to="/search">레시피 월드컵</Link>
             </li>
             <li>
-              <Link to="/students">Student</Link>
+              <Link to="/students">이달의 경연</Link>
             </li>
             <li>
-              <Link to="/myinfo">My Info</Link>
+              <Link to="/myinfo">내 정보</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="navbar-center">
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          ReicKing
+          RECIKING
         </Link>
       </div>
       <div className="navbar-end">

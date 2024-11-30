@@ -13,7 +13,7 @@ const Login = () => {
     setIsLoading(true);
     setMessage('');
     try {
-      const response = await postLogin(id, pw);
+      const response = { name: 'admin', id: 'admin' }; // await postLogin({ id, pw });
       setMessage(`Welcome, ${response.name}`);
       localStorage.setItem('isLoggedIn', 'true'); // 로그인 상태 저장
       localStorage.setItem('userId', id); // 로그인 상태 저장
