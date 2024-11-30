@@ -7,13 +7,14 @@ import { ThemedView } from "@/components/ThemedView";
 
 export default function HomeScreen() {
   return (
-    <ThemedView style={{ padding: 16 }}>
+    <ThemedView>
       <Image
-        source={require("../../assets/images/competition_notice.png")}
+        source={require("../assets/images/competition_notice.png")}
         style={{
           width: "100%",
-          height: 400,
-          resizeMode: "contain",
+          height: "100%",
+          resizeMode: "cover",
+          marginTop: Platform.OS === "ios" ? 0 : -24,
         }}
       />
     </ThemedView>
