@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { postLogin } from '../api';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {

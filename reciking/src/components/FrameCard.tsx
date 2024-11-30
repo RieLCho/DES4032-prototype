@@ -1,4 +1,3 @@
-import { useNavigate } from 'react-router-dom';
 import { FrameImageData } from '../types';
 
 interface FrameDisplayProps {
@@ -6,12 +5,6 @@ interface FrameDisplayProps {
 }
 
 const FrameCard = ({ frames }: FrameDisplayProps) => {
-  const navigate = useNavigate();
-
-  const handleClick = (uid: string) => {
-    navigate(`/detail?uid=${uid}`);
-  };
-
   return (
     <>
       {frames.map((frame) => (

@@ -1,14 +1,9 @@
-import { useState, useEffect } from 'react';
-import { useQuery } from 'react-query';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useState } from 'react';
 import Pagination from '../components/Pagination';
-import { PostBlueArchiveSearch } from '../api';
 import FrameCard from '../components/FrameCard';
 import SearchBar from '../components/Searchbar';
-import { SearchRes } from '../types';
 import DetailModal from './Detail';
-import NoResult from '../components/NoResult';
-import { recipe, vsRecipe } from '../data';
+import { vsRecipe } from '../data';
 import VSDetail from './VSDetail';
 
 const Search = () => {
@@ -43,7 +38,6 @@ const Search = () => {
       </div>
     );
   };
-  const navigate = useNavigate();
   return (
     <div className="flex flex-col justify-center gap-y-4 p-4 font-gyeonggi-title">
       <div className="flex justify-center items-center">

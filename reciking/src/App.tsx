@@ -6,7 +6,6 @@ import DetailPage from './pages/Detail';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Students from './pages/Students';
 import StudentDetail from './pages/StudentDetail';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
